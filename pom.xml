@@ -22,7 +22,7 @@
           <archive>
             <manifest>
               <mainClass>
-                br.com.esdevcode.taskcli.TaskCliApplication
+                br.com.esdevcode.TaskCliApplication
               </mainClass>
             </manifest>
           </archive>
