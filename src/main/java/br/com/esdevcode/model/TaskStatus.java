@@ -11,21 +11,17 @@ public enum TaskStatus {
         this.value = value;
     }
 
-    public  String getValue() {
-        return  value;
+    public String getValue() {
+        return value;
     }
 
-    public  static TaskStatus fromValue(String value) {
-        for(TaskStatus status : TaskStatus.values()) {
-            if (status.value.equalsIgnoreCase(value)) {
-                return  status;
+    public static TaskStatus fromValue(String value) {
+        for (TaskStatus status : values()) {
+            if (status.value.equals(value)) {
+                return status;
             }
         }
 
-        throw new IllegalArgumentException(
-                "Status inválido: " + value
-                        + ". Use todo, in-progress ou done."
-        );
+        throw new IllegalArgumentException("Status invalido: " + value);
     }
-
 }
