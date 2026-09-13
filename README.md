@@ -199,12 +199,29 @@ Os status disponiveis sao:
 ## Project Structure / Estrutura do Projeto
 
 ```text
-src/main/java/br/com/esdevcode/taskcli
-├── Task.java
-├── TaskCliApplication.java
-├── TaskRepository.java
-├── TaskService.java
-└── TaskStatus.java
+task-tracker-cli
+├── .github
+│   └── workflows
+│       └── release.yml
+├── .mvn
+├── src
+│   ├── main
+│   │   └── java
+│   │       └── br
+│   │           └── com
+│   │               └── esdevcode
+│   │                   ├── model
+│   │                   │   ├── Task.java
+│   │                   │   └── TaskStatus.java
+│   │                   ├── repository
+│   │                   │   └── TaskRepository.java
+│   │                   ├── service
+│   │                   │   └── TaskService.java
+│   │                   └── TaskCliApplication.java
+│   └── test
+├── .gitignore
+├── pom.xml
+└── README.md
 ```
 
 ## Reference / Referencia
